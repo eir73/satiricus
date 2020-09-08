@@ -1,5 +1,4 @@
 .header {
-    display: none;
     padding: 0 50px;
     font-family: 'Lato', sans-serif;
     box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.07);
@@ -149,7 +148,7 @@
 }
 
 .header-black {
-    background-color: #000;
+    background-color: #080808;
 }
 
 .header-black .nav-link {
@@ -161,7 +160,7 @@
 }
 
 .header-white .nav-link {
-    color: #000;
+    color: #080808;
 }
 
 @media (max-width: 1440px) {
