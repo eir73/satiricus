@@ -5,7 +5,7 @@
     margin: 50px auto 0;
 }
 
-.back-wr {
+.back-wr, .confirm-wr {
   width: 100%;
 }
 
@@ -24,7 +24,10 @@
 
 .content-wr {
   width: 100%;
+  padding-bottom: 68px;
+  margin-bottom: 35px;
   justify-content: space-between;
+  border-bottom: 1px solid #EDEDED;
 }
 
 .form-input-wr {
@@ -333,6 +336,53 @@ input:checked ~ .checkmark:after {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
+}
+
+.confirm {
+  width: 303px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;;
+}
+
+.total-price {
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.total-price .total-num {
+  color: #c6a564;
+}
+
+.bt {
+  display: block;
+  width: 171px;
+  height: 50px;
+  margin-left: 20px;
+  text-align: center;  
+  border: none;
+  outline: none !important;
+}
+
+.home-btn {
+  background-color: #BA2126;
+}
+
+.home-btn:hover {
+  background-color: #bf2631;
+}
+
+.home-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 30px;
+  color: #C6A564 !important;
+  text-decoration: none !important;
+  text-transform: uppercase;
 }
 
 @media (max-width: 1440px) {
