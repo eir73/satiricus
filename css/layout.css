@@ -2,7 +2,6 @@
     position: relative;
     top: -1px;
     margin-bottom: -1px;
-    background-color: rgb(22,22,22);
     padding-bottom: 76px;
 }
 
@@ -162,7 +161,7 @@
 }
 
 .main-content {
-    background-color: rgb(22,22,22);
+    font-family: "Lato", sans-serif;
 }
 
 @media (max-width: 1440px) {
@@ -170,17 +169,17 @@
         width: 115.8px;
     }
 
-    .heading-text {
+    .bg .heading-text {
         max-width: calc(100% - 115.8px);
     }
 
-    .heading-date {
+    .bg .heading-date {
         margin-left: 45px;
     }
 }
 
 @media (max-width: 1199px) {
-    .heading-text {
+    .bg .heading-text {
         padding-left: 45px;
     }
 }
