@@ -321,28 +321,11 @@ input:checked ~ .checkmark:after {
   color: #C6A564;
 }
 
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-::-webkit-scrollbar-track {
-  background: #202020; 
-}
-
-::-webkit-scrollbar-thumb {
-  background: #5F5F5F;
-  border-radius: 100px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555; 
-}
-
 .confirm {
   width: 303px;
   display: flex;
   align-items: center;
-  margin-left: auto;;
+  margin-left: auto;
 }
 
 .total-price {
