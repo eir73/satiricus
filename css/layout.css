@@ -9,6 +9,10 @@
     background-color: #080808;
 }
 
+.page-heading {
+    position: relative;
+}
+
 .heading-imgwr {
     background-color: #080808;
     max-height: 502px;
@@ -121,7 +125,8 @@
     padding: 51px 100px 51px calc(50% - 550px);
     position: absolute;
     background-color: #fff;
-    bottom: 0px;
+    bottom: 0;
+    transform: translate(0, 50%);
     max-width: calc(100% - 150.8px);
 }
 
@@ -179,7 +184,7 @@
 }
 
 @media (max-width: 1199px) {
-    .bg .heading-text {
+    .page-heading .heading-text {
         padding-left: 45px;
     }
 }
