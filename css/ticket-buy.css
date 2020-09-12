@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 1110px;
+    padding-top: 0;
     margin: 50px auto 0;
 }
 
@@ -91,8 +92,8 @@
   display: block;
   background-color: white;
   color: #AFAFAF;
-  padding-left: 2px;
-  padding-right: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
   position: absolute;
   pointer-events: none;
   height: 15px;
@@ -289,7 +290,7 @@ input:checked ~ .checkmark:after {
   flex-direction: column;
   border-bottom: 1px solid #4F4F4F;
   max-height: 240px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .tickets-ticket {
@@ -320,6 +321,7 @@ input:checked ~ .checkmark:after {
   line-height: 16px;
   color: #C6A564;
 }
+
 
 .confirm {
   width: 303px;

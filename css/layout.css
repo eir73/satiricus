@@ -5,6 +5,34 @@
     padding-bottom: 76px;
 }
 
+.main-content {
+    display: flex;
+    flex-direction: column;
+    width: 1110px;
+    padding-top: 174px;
+    margin: 0 auto;
+    font-family: "Lato", sans-serif;
+}
+
+.form-heading {
+    position: relative;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    color: #fff;
+    margin-bottom: -15px;
+  }
+  
+  .form-heading::before {
+    content: "";
+    position: absolute;
+    left: -62px;
+    top: 15px;
+    height: 1px;
+    width: 42px;
+    background-color: #C6A564;
+  }
+
 .main.detail {
     background-color: #080808;
 }
@@ -186,5 +214,18 @@
 @media (max-width: 1199px) {
     .page-heading .heading-text {
         padding-left: 45px;
+    }
+
+    .main-content {
+        padding-right: 45px;
+        padding-left: 87px;
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    .form-heading:before {
+        width: 22px;
+        left: -42px;
     }
 }
