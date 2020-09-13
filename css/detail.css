@@ -427,7 +427,7 @@
   background-color: #161616;
 }
 
-svg {
+.detail svg {
   display: block;
   width: 20px;
   padding: 0;
@@ -438,55 +438,55 @@ svg {
 }
 
 .mb50 {
-  margin-bottom: 50px;
+  margin-bottom: 50px !important;
 }
 
 .mb25 {
-  margin-bottom: 25px;
+  margin-bottom: 25px !important;
 }
 
 .pt1 {
-  padding-top: 18px;
+  padding-top: 18px !important;
 }
 
 .mr1 {
-  margin-right: 20px;
+  margin-right: 20px !important;
 }
 
 .mr2 {
-  margin-right: 40px;
+  margin-right: 40px !important;
 }
 
 .mr3 {
-  margin-right: 60px;
+  margin-right: 60px !important;
 }
 
 .ml1 {
-  margin-left: 20px;
+  margin-left: 20px !important;
 }
 
 .pl1 {
-  padding-left: 20px;
+  padding-left: 20px !important;
 }
 
 .pl2 {
-  padding-left: 40px;
+  padding-left: 40px !important;
 }
 
 .pr2 {
-  padding-right: 40px;
+  padding-right: 40px !important;
 }
 
 .pr1 {
-  padding-right: 20px;
+  padding-right: 20px !important;
 }
 
 .ml2 {
-  margin-left: 40px;
+  margin-left: 40px !important;
 }
 
 .ml3 {
-  margin-left: 60px;
+  margin-left: 60px !important;
 }
 
 svg.green path{
