@@ -41,6 +41,10 @@ body {
     background-color: #080808;
 }
 
+.main.spectacole {
+    background-color: #161616;
+}
+
 .page-heading {
     position: relative;
 }
@@ -52,6 +56,18 @@ body {
     flex-direction: row;
     justify-content: center;
     position: relative;
+}
+
+.spectacole .heading-imgwr {
+    justify-content: start;
+}
+
+.spectacole .heading-imgwr .bg {
+    width: calc(100% - 150px);
+    height: 502px;
+    background: url(../img/spec-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .blog .heading-imgwr .bg {
@@ -202,6 +218,14 @@ body {
 }
 
 @media (max-width: 1440px) {
+    .spectacole .heading-imgwr .bg {
+        width: calc(100% - 115.8px);
+        height: 502px;
+        background: url(../img/spec-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
     .main .social-links {
         width: 115.8px;
     }

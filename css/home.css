@@ -446,7 +446,8 @@
     font-size: 12px;
     line-height: 30px;
     text-transform: uppercase;
-    color: #C6A564;
+    text-decoration: none !important;
+    color: #C6A564 !important;
 }
 
 .ticket-buy-link.link-red {
