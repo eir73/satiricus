@@ -91,3 +91,7 @@
     text-transform: uppercase;
     color: #FFFFFF;
   }
+
+  .item-img-wr img {
+    width: 100%;
+}
