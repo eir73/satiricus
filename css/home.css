@@ -9,7 +9,7 @@
 }
 
 .home .heading-imgwr .bg {
-    width: calc(100% - 150px);
+    width: calc(100% - 115.8px);
     height: calc(100vh - 100px);
 }
 
@@ -19,6 +19,7 @@
 
 .slide-wr {
     height: 100%;
+    overflow: hidden;
 }
 
 .slide-desc {
@@ -1012,5 +1013,95 @@ p.main-link {
 
     .next {
         left: 180px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .swiper-pagination {
+      display: none !important;
+    }
+
+    .slide-text {
+      margin-left: 20px;
+    }
+
+    .slide-desc {
+      width: 100%;
+      background-position: -250px;
+      background-size: contain;
+    }
+    .slide-img {
+      position: relative;
+      z-index: -1;
+    }
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  left: 100px;
+}
+
+    .slide-img img {
+      position: absolute;
+      z-index: -1;
+      height: 100%;
+      right: -50px;
+      margin-right: auto;
+    }
+
+    .home .heading-imgwr .bg {
+      width: 100%;  
+      overflow: hidden;
+    }
+
+    .home-noutati {
+      flex-direction: column;
+    }
+
+    .noutati-col-video, .noutati-col-text, .video_wrapper {
+      width: 100%;
+    }
+
+    .noutati-col-video {
+      margin-bottom: -40px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .spec-name {
+      font-size: 45px;
+      margin-bottom: 50px;
+    }
+
+    .home .bg .day {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .home .month {
+      margin-bottom: 0;
+    }
+
+    .home .author {
+      max-width: 183px;
+      margin-bottom: 15px;
+    }
+
+    .spec-desc {
+      display: none;
+    }
+
+    .slide-text {
+      margin-top: 46px;
+    }
+
+    .home .heading-imgwr .bg {
+      height: 490px;
+    }
+
+    .slide-desc {
+      background-position: -230px;
     }
   }

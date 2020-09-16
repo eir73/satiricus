@@ -257,3 +257,25 @@ body {
         left: -42px;
     }
 }
+
+@media (max-width: 991px) {
+    aside.social-links {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .form-heading:before {
+        width: 42px !important;
+        left: calc(50% - 21px) !important;
+        top: -10px !important;
+    }
+
+    .main-content {
+        padding-left: 45px !important;
+    }
+
+    .form-heading {
+        text-align: center;
+    }
+}

@@ -195,8 +195,10 @@ input:checked ~ .checkmark:after {
 }
 
 .pay-info {
+  display: block;
+  margin-top: 10px;
   font-size: 12px;
-  line-height: 30px;
+  line-height: 20px;
   padding-left: 36px;
   color: #AFAFAF;
 }
@@ -399,5 +401,61 @@ input:checked ~ .checkmark:after {
   .form-heading:before {
     width: 22px;
     left: -42px;
+  }
+}
+
+@media (max-width: 991px) {
+  .main form {
+    width: unset;
+    margin-right: 20px;
+  }
+}
+
+.mob {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .content-wr {
+    flex-direction: column;
+  }
+
+  .des {
+    display: none;
+  }
+
+  .mob {
+    display: flex;
+  }
+
+  .content-wr > * {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .main form {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ededed;
+  }
+
+  .confirm-wr {
+    margin-bottom: 70px;
+  }
+
+  .content-wr {
+    border: none !important;
+    padding-bottom: 0;
+  }
+
+  .main {
+    padding-bottom: 53px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .main-content {
+    padding-left: 7px !important;
+    padding-right: 7px !important;
   }
 }
