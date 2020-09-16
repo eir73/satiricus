@@ -255,6 +255,28 @@
 
 @media (max-width: 991px) {
 
+  .navbar {
+    flex-wrap: nowrap;
+  }
+
+  .navbar-c {
+    margin-left: -230px;
+  }
+
+  .navbar-nav {
+    width: calc(100vw);
+    margin-top: 60px;
+    margin-right: 0;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: height ease 1s;
+  }
+
+  .nav-item:first-child .nav-link {
+    margin-top: calc(50vh - 140px);
+  }
+
   .nav-link-gold span {
     top: 17px;
   }
@@ -274,6 +296,8 @@
   .header .nav-link.nav-link-gold {
     padding-top: 27px;
     padding-bottom: 0;
+    position: absolute;
+    right: 0;
   }
 
   .navbar-toggler {
@@ -286,14 +310,8 @@
   .navbar-toggler-icon .material-icons {
     color: #fff;
     position: absolute;
-    top: 20px;
+    top: 25px;
     left: 11px;
-  }
-
-  .navbar-nav {
-    padding-top: 100px;
-    max-width: 375px;
-    height: auto;
   }
 
   .nav-item {
@@ -302,7 +320,10 @@
   }
 
   .mob-lang {
+    margin-top: calc(50vh - 99px);
     display: flex;
+    justify-content: center;
+    border-top: 1px solid #4f4f4f;
   }
 
   .mob-lang .nav-link {
