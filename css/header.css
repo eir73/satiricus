@@ -273,8 +273,13 @@
     transition: height ease 1s;
   }
 
+  .nav-item .nav-link {
+    margin-right: 0;
+  }
+
   .nav-item:first-child .nav-link {
     margin-top: calc(50vh - 140px);
+    margin-right: 0;
   }
 
   .nav-link-gold span {
@@ -320,16 +325,22 @@
   }
 
   .mob-lang {
-    margin-top: calc(50vh - 99px);
+    margin-top: calc(50vh - 131px);
     display: flex;
     justify-content: center;
+    align-items: center;
     border-top: 1px solid #4f4f4f;
+    height: 63px;
   }
 
   .mob-lang .nav-link {
-    display: block;
+    display: flex;
     margin-right: 20px !important;
     opacity: 0.7;
+  }
+
+  .mob-lang .nav-link:last-child {
+    margin-right: 0 !important;
   }
 
   .mob-lang .nav-link.active {
