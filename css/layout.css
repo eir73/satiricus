@@ -271,6 +271,11 @@ body {
         transform: none;
     }
 
+    .heading-text.multiple .multiple-text {
+        position: static;
+        text-align: center;
+    }
+
     .main-content {
         padding-top: 75px;
     }
@@ -310,5 +315,5 @@ body {
 }
 
 @media (max-width: 575px) {
-    
+   
 }
