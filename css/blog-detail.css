@@ -2,6 +2,7 @@
     background-color: #161616;
     padding-bottom: 0;
 }
+
 .page-heading {
     background-color: #080808;
     height: 500px;
@@ -88,7 +89,7 @@
     border-bottom: none;
 }
 
-.spectacles-row > * {
+.spectacles-row>* {
     display: block;
     font-size: 14px;
     line-height: 25px;
@@ -147,11 +148,11 @@
 }
 
 .block-text {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 30px;
-  color: #afafaf;
-  margin-bottom: 25px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #afafaf;
+    margin-bottom: 25px;
 }
 
 .block-text b {
@@ -159,35 +160,35 @@
 }
 
 .block-text:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .block-img-wr {
-  position: relative;
+    position: relative;
 }
 
 .block-img-first {
-  flex-direction: row-reverse;
+    flex-direction: row-reverse;
 }
 
 .block-text.block-text-bold {
-  font-weight: 600;
-  color: #fff;
+    font-weight: 600;
+    color: #fff;
 }
 
-.blog-detail-block.block-img-first > div:first-child {
+.blog-detail-block.block-img-first>div:first-child {
     width: 540px;
 }
 
-.blog-detail-block.block-img-first > div:last-child {
+.blog-detail-block.block-img-first>div:last-child {
     width: 350px;
 }
 
-.blog-detail-block > div:first-child {
+.blog-detail-block>div:first-child {
     width: 350px;
 }
 
-.blog-detail-block > div:last-child {
+.blog-detail-block>div:last-child {
     width: 540px;
 }
 
@@ -197,4 +198,101 @@
 
 .blog-detail-text-wr {
     margin-bottom: 60px;
+}
+
+@media (max-width: 1199px) {
+    aside {
+        display: none !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .blog-detail .main-content {
+        width: 100%;
+    }
+
+    .page-heading {
+        height: 0;
+    }
+
+    .blog-detail-article {
+        margin-top: 0;
+    }
+
+    .blog-detail-article .heading {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 100px;
+        background-color: #080808;
+    }
+
+    .article-imgwr,
+    .blog-detail-block,
+    .blog-detail-blocks {
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+
+    .blog-detail-text-wr {
+        margin-bottom: 15px;
+    }
+
+    .article-text,
+    .block-text,
+    .blog-detail-spectacles {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .blog-detail-spectacles {
+        margin-bottom: 30px;
+    }
+
+    .block-img-wr {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+}
+
+@media (max-width: 767px) {
+    .blog-detail .main-content {
+        padding-left: 0 !important;
+    }
+
+    .blog-detail-article .heading {
+        font-size: 40px;
+        padding-top: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 40px;
+    }
+
+    .blog-detail-block {
+        flex-direction: column;
+    }
+
+    .blog-detail-article {
+        margin-bottom: 20px;
+    }
+
+    .block-text {
+        margin-bottom: 15px !important;
+    }
+
+    .blog-detail-block>* {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .blog-detail-article .heading {
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
 }

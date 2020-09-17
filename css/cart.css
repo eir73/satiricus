@@ -15,22 +15,8 @@
 }
 
 .form-heading {
-  position: relative;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 30px;
   color: #161616;
   margin-bottom: 30px;
-}
-
-.form-heading::before {
-  content: "";
-  position: absolute;
-  left: -62px;
-  top: 15px;
-  height: 1px;
-  width: 42px;
-  background-color: #C6A564;
 }
 
 .confirm {
@@ -93,7 +79,6 @@
   position: relative;
   min-height: 310px;
   margin-bottom: 30px;
-  /*background-image: url(../img/cart-ticket.png);*/
   background-color: #202020;
   background-position: center;
   background-repeat: no-repeat;
@@ -101,23 +86,26 @@
 
 .circle {
   width: 54px;
-  height: 54px;
+  height: 26px;
   border-radius: 54px;
   background-color: #fff;
+  left: calc(50% - 26px);
 }
 
 .circle-bottom {
   position: absolute;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
   z-index: 99;
-  bottom: -27px;
-  left: 52.6%;
+  bottom: -2px;
 }
 
 .circle-top {
   position: absolute;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
   z-index: 100;
-  top: -27px;
-  left: 52.52%;
+  top: -2px;
 }
 
 .cart-ticket:last-child {
@@ -131,11 +119,11 @@
   justify-content: center;
 }
 
-.premiere-text {
+.premiera-text {
   display: none;
 }
 
-.col-date.premiere .premiere-text{
+.col-date.premiera .premiera-text{
   display: block;
   position: absolute;
   text-transform: uppercase;
@@ -185,6 +173,10 @@
   min-width: 114px;
   border-right: 1px solid #4f4f4f;
   padding-right: 18px;
+}
+
+.info-duration {
+  margin-right: auto;
 }
 
 .info-text {
@@ -359,6 +351,14 @@
   text-align: right;
 }
 
+.m-age {
+  display: none;
+}
+
+.info-sala {
+  display: none;
+}
+
 @media (max-width: 1440px) {
 }
 
@@ -374,5 +374,178 @@
   .form-heading:before {
     width: 22px;
     left: -42px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cart-ticket {
+    flex-direction: column;
+    min-height: 493px;
+    justify-content: space-between;
+  }
+
+  .cart-ticket > .d-flex {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .heading-date, .info-sala {
+    display: flex;
+  }
+
+  .content-wr {
+    padding-bottom: 30px;
+  }
+
+  .info-age {
+    width: 100%;
+  }
+
+  .info-sala {
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #5F5F5F;
+  }
+
+  .info-time {
+    min-width: 97px;
+  }
+
+  .heading-date .num-day {
+    margin-left: auto;
+    margin-right: 5px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .heading-date .day, .info-age .info-text {
+    display: none;
+  }
+
+  .col-date {
+    height: 79px;
+    padding-right: 15px;
+    padding-left: 25px;
+    padding-top: 32px;
+    display: flex;
+    justify-content: start;
+  }
+
+  .col-date.premiera .premiera-text {
+    top: 32px;
+    left: 66px;
+  }
+
+  .tickets-wr {
+    padding-top: 25px;
+    min-height: 121px;
+    height: auto;
+    max-height: 243px;
+  }
+
+  .cancel-wr {
+    display: none;
+  }
+
+  .m-age {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: right;
+    color: #BA2126;
+    margin-bottom: 0;
+  }
+
+  .heading-date .month {
+    line-height: 39px;
+  }
+
+  .col-content {
+    min-height: 293px;
+    border-image: url(../img/ticket-border.png) 1;
+    border-top: 1px solid white;
+  }
+
+  .heading-title {
+    min-height: 293px;
+  }
+  .cart .title-name {
+    min-height: 293px;
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+
+  .col-content {
+    background-size: contain;
+  }
+
+
+  .ticket-info {
+    border-bottom: 1px solid #4F4F4F;
+  }
+
+  .cart .title-name {
+    font-size: 40px;
+  }
+
+  .tickets-ticket .cost {
+    margin-left: auto;
+  }
+
+  .confirm {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .confirm .total-price {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 21px;
+  }
+
+  .book-btn {
+    margin-left: 0;
+  }
+
+  .tickets-total {
+    display: none;
+  }
+
+  .info-duration {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .main-content {
+    padding-left: 7px !important;
+    padding-right: 7px !important;
+  }
+
+  .tickets-ticket .place {
+    max-width: 150px;
+  }
+
+  .home-btn {
+    margin-left: 10px;
+  }
+
+  .bt {
+    margin-bottom: 15px;
+  }
+
+}
+
+@media (max-width: 374px) {
+  .bt {
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
