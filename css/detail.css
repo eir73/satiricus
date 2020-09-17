@@ -703,10 +703,18 @@ span.busy::before {
     width: unset;
   }
 
+  .detail-video-wr {
+    display: flex;
+    flex-direction: column;
+  }
 
   .video-description {
-    width: 300px;
-    padding: 20px 28px;
+    position: relative;
+    top: -25px;
+  }
+
+  .videoWrapperActive+.video-description {
+    top: 0;
   }
 }
 
@@ -715,6 +723,14 @@ span.busy::before {
 }
 
 @media (max-width: 991px) {
+  .detail .heading-imgwr .bg {
+    background-position: center;
+  }
+
+  .detail-video-wr {
+    margin-bottom: 60px;
+  }
+
   .seats-map-wr {
     flex-direction: column;
     align-items: center;
@@ -750,6 +766,45 @@ span.busy::before {
 }
 
 @media (max-width: 767px) {
+
+  .program-row-divider {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .detail-heading {
+    text-align: center;
+  }
+
+  .program-row.mb-70 {
+    margin-bottom: 30px;
+  }
+
+  .program-row.bb-0:last-child {
+    margin-bottom: 50px;
+  }
+
+  .program-row.mb-30 {
+    margin-bottom: 10px;
+  }
+
+.detail .heading-imgwr .bg {
+  background-size: cover;
+}
+
+  .video_wrapper {
+    width: 525px;
+  }
+
+  .video-description {
+    padding: 30px;
+    width: 490px;
+  }
+
+  .video_wrapper_full {
+    padding-top: 330px;
+  }
+
   .detail-col {
     margin-left: 15px;
     margin-right: 15px;
@@ -757,6 +812,24 @@ span.busy::before {
 
   .slider-wr {
     width: 626px;
+  }
+
+  .program-wr {
+    justify-content: start;
+    flex-direction: column;
+    margin-bottom: 70px;
+  }
+
+  .program-col {
+    width: 100%;
+  }
+
+  .program-text {
+    text-align: center;
+  }
+
+  .program-person {
+    text-align: right;
   }
 }
 
@@ -822,6 +895,35 @@ span.busy::before {
 
   .next {
     right: 100px;
+  }
+
+  .video_wrapper {
+    width: calc(100vw);
+  }
+
+  .video_wrapper_full {
+    padding-top: calc(60vw);
+  }
+
+  .video-description {
+    width: calc(100% - 38px);
+    padding-left: 23px;
+    padding-right: 23px;
+    text-align: center;
+  }
+
+  .video-heading {
+    margin-bottom: 15px;
+  }
+
+  .detail .heading-imgwr .bg {
+    height: calc(46vw);
+    align-items: center;
+  }
+
+  .bg .heading-date {
+    margin-top: 0;
+    margin-left: 25px;
   }
 }
 
