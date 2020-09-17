@@ -359,4 +359,8 @@
     margin-right: 0;
   }
 
+  .header {
+    padding-right: 11px;
+  }
+
 }

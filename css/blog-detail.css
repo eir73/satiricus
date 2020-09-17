@@ -198,3 +198,96 @@
 .blog-detail-text-wr {
     margin-bottom: 60px;
 }
+
+@media (max-width: 1199px) {
+    aside {
+        display: none !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .blog-detail .main-content {
+        width: 100%;
+    }
+
+    .page-heading {
+        height: 0;
+    }
+
+    .blog-detail-article {
+        margin-top: 0;
+    }
+
+    .blog-detail-article .heading {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 100px;
+        background-color: #080808;
+    }
+
+    .article-imgwr, .blog-detail-block, .blog-detail-blocks {
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+
+    .blog-detail-text-wr {
+        margin-bottom: 15px;
+    }
+
+    .article-text, .block-text, .blog-detail-spectacles {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .blog-detail-spectacles {
+        margin-bottom: 30px;
+    }
+
+    .block-img-wr {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+}
+
+@media (max-width: 767px) {
+    .blog-detail .main-content {
+        padding-left: 0 !important;
+    }
+
+    .blog-detail-article .heading {
+        font-size: 40px;
+        padding-top: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 40px;
+    }
+
+    .blog-detail-block {
+        flex-direction: column;
+    }
+
+    .blog-detail-article {
+        margin-bottom: 20px;
+    }
+
+    .block-text {
+        margin-bottom: 15px !important;
+    }
+
+    .blog-detail-block > * {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .blog-detail-article .heading {
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+}
