@@ -209,22 +209,26 @@
 
 .circle {
   width: 54px;
-  height: 54px;
+  height: 27px;
   border-radius: 54px;
   background-color: #161616;
 }
 
 .circle-bottom {
   position: absolute;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
   z-index: 99;
-  bottom: -27px;
-  left: 52.6%;
+  bottom: -2px;
+  left: 52.52%;
 }
 
 .circle-top {
   position: absolute;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
   z-index: 100;
-  top: -27px;
+  top: -2px;
   left: 52.52%;
 }
 
@@ -1093,6 +1097,10 @@ p.main-link {
   }
 }
 
+.m-age, .info-sala {
+  display: none;
+}
+
 @media (max-width: 767px) {
   .spec-name {
     font-size: 45px;
@@ -1137,6 +1145,156 @@ p.main-link {
     width: 100%;
     text-align: center;
   }
+/* wwwwwwwwwwww */
+  .cart-ticket {
+    flex-direction: column;
+    min-height: 493px;
+    justify-content: space-between;
+  }
+
+  .cart-ticket > .d-flex {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .heading-date, .info-sala {
+    display: flex;
+  }
+
+  .content-wr {
+    padding-bottom: 30px;
+  }
+
+  .info-age {
+    width: 100%;
+  }
+
+  .info-sala {
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #5F5F5F;
+  }
+
+  .info-time {
+    min-width: 97px;
+  }
+
+  .heading-date .num-day {
+    margin-left: auto;
+    margin-right: 5px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .heading-date .day, .info-age .info-text {
+    display: none;
+  }
+
+  /* www */
+  .col-date {
+    height: 79px;
+    padding-right: 15px;
+    padding-left: 25px;
+    padding-top: 32px;
+    display: flex;
+    justify-content: start;
+  }
+
+  .col-date.premiera .premiera-text {
+    top: 32px;
+    left: 66px;
+  }
+
+  .tickets-wr {
+    padding-top: 0;
+    min-height: 50px;
+    height: 50px;
+    max-height: 243px;
+    overflow: unset;
+  }
+
+  .ticket-info {
+    margin-bottom: 80px;
+    border-bottom: 1px solid #4f4f4f;
+  }
+
+  .cancel-wr {
+    display: none;
+  }
+
+  .ticket-buy-link {
+    margin-top: -50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .m-age {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: right;
+    color: #BA2126;
+    margin-bottom: 0;
+  }
+
+  .heading-date .month {
+    line-height: 39px !important;
+  }
+
+  .col-date.premiere .premiere-text {
+    top: 32px;
+    left: 66px;
+  }
+
+  .col-content {
+    min-height: 372px;
+    border-image: url(../img/ticket-border.png) 1;
+    border-top: 1px solid white;
+  }
+
+  .m-age {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: right;
+    color: #BA2126;
+    margin-bottom: 0;
+}
+
+  .heading-title {
+    min-height: 372px;
+  }
+  
+  .cart .title-name {
+    min-height: 372px;
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+
+  .col-content {
+    background-size: contain;
+  }
+
+  .tickets-total, .tickets-wr .home-link {
+    display: none;
+  }
+  .home .title-name {
+    font-size: 40px;
+    min-height: 372px;
+    padding-top: 80px;
+    padding-bottom: 145px;
+  }
+
+  .circle-bottom, .circle-top {
+    left: calc(50% - 27px);
+  }
 }
 
 @media (max-width: 575px) {
@@ -1146,5 +1304,10 @@ p.main-link {
 
   .slide-desc {
     background-size: cover;
+  }
+
+  .home .main-content {
+    padding-left: 7px !important;
+    padding-right: 7px !important;
   }
 }

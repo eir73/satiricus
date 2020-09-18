@@ -137,7 +137,11 @@
                     </div>
                   </div>
                   <div class="slide-img">
-                    <img src="./img/home-slider-img.jpg" srcset="./img/home-slider-w575.jpg 374w" sizes="(max-width: 575px) 375px" alt="">
+                    <picture>
+                      <source srcset="./img/home-slider-img.jpg" media="(min-width: 576px)">
+                      <source srcset="./img/home-slider-w575.jpg" media="(min-width: 280px">
+                      <img src="./img/home-slider-img.jpg" alt=""> 
+                    </picture>
                   </div>
                 </div>
               </div>
@@ -164,14 +168,20 @@
                     </div>
                   </div>
                   <div class="slide-img">
-                    <img src="./img/home-slider-img.jpg" srcset="./img/home-slider-w575.jpg 374w" sizes="(max-width: 575px) 375px" alt="">
+                    <picture>
+                      <source srcset="./img/home-slider-img.jpg" media="(min-width: 576px)">
+                      <source srcset="./img/home-slider-w575.jpg" media="(min-width: 280px">
+                      <img src="./img/home-slider-img.jpg" alt=""> 
+                    </picture>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- Add Arrows -->
+            <div class="swiper-pagination">
+              <span id="current-slide">01</span>
+              <span id="next-slide">02</span>
+              <span id="next-2-slide">03</span>
+            </div>
             <div class="next swiper-button-next"></div>
             <div class="prev swiper-button-prev"></div>
           </div>
@@ -200,6 +210,7 @@
               Premiere
             </p>
             <div class="heading-date">
+              <p class="m-age">12+</p>
               <p class="day">Duminica</p>
               <h4 class="num-day">26</h4>
               <p class="month">Iulie</p>
@@ -217,6 +228,9 @@
               </div>
               <div class="info-duration mr-auto">
                 <span class="info-text">150 MIN</span>
+              </div>
+              <div class="info-age">
+                <span class="info-sala">SALA MARE</span>
               </div>
             </div>
           </div>
@@ -241,6 +255,7 @@
               Premiere
             </p>
             <div class="heading-date">
+              <p class="m-age">12+</p>
               <p class="day">Duminica</p>
               <h4 class="num-day">26</h4>
               <p class="month">Iulie</p>
@@ -282,6 +297,7 @@
               Premiere
             </p>
             <div class="heading-date">
+              <p class="m-age">12+</p>
               <p class="day">Duminica</p>
               <h4 class="num-day">26</h4>
               <p class="month">Iulie</p>
@@ -323,6 +339,7 @@
               Premiere
             </p>
             <div class="heading-date">
+              <p class="m-age">12+</p>
               <p class="day">Duminica</p>
               <h4 class="num-day">26</h4>
               <p class="month">Iulie</p>
@@ -364,6 +381,7 @@
               Premiere
             </p>
             <div class="heading-date">
+              <p class="m-age">12+</p>
               <p class="day">Duminica</p>
               <h4 class="num-day">26</h4>
               <p class="month">Iulie</p>
@@ -405,6 +423,7 @@
               Premiere
             </p>
             <div class="heading-date">
+              <p class="m-age">12+</p>
               <p class="day">Duminica</p>
               <h4 class="num-day">26</h4>
               <p class="month">Iulie</p>
