@@ -27,10 +27,6 @@
       padding-top: 25px;
   }
 
-.block-img-wr {
-    width: 100%;
-}
-
  .about-block .block-text-wr {
       margin-right: 30px;
   }
@@ -61,14 +57,21 @@
 }
 
 .block-img-wr {
+    min-width: 445px;
     position: relative;
+    height: fit-content;
+}
+
+.block-img-wr img:not(.sign) {
+    width: 100%;
 }
 
 .block-img-wr .sign {
     position: absolute;
     bottom: 0;
     right: 40px;
-     transform: translate(0,60%);
+    top: 90%;
+     /* transform: translate(0,60%); */
 }
 
 .block-img-first {
@@ -312,5 +315,69 @@
   }
 
   @media (max-width: 1199px) {
+    .block-img-wr {
+        min-width: 345px;
+    }
+  }
 
+  @media (max-width: 991px) {
+    .about-block .block-text-wr {
+        margin-right: 0;
+    }
+    .about .heading-imgwr .bg {
+        background-position: center;
+      }
+
+      .about-block {
+          flex-direction: column;
+          margin-bottom: 40px;
+      }
+
+      .block-text-wr {
+          padding-top: 0;
+          margin-bottom: 30px;
+      }
+
+      .about-blocks, .history-blocks, .about-tours, .about-gallery {
+          margin-bottom: 75px;
+      }
+
+      .gallery-wr {
+          grid-gap: 20px;
+      }
+  }
+
+  @media (max-width: 767px) {
+      .gallery-wr {
+        grid-gap: 15px;
+    }
+    .about .main-content {
+        padding-left: 13px !important;
+        padding-right: 13px;
+      }
+
+      .about .heading-imgwr .bg {
+        height: 350px;
+        background-size: cover;
+        align-items: start;
+      }
+
+      .spectacle-name {
+          max-width: 66%;
+      }
+  }
+
+  @media (max-width: 575px) {
+    .about .heading-imgwr .bg {
+        height: calc(46vw);
+        align-items: center;
+      }
+
+      .gallery-wr {
+        grid-gap: 5px;
+    }
+
+    .block-img-wr {
+        min-width: 100% !important;
+    }
   }

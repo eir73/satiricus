@@ -78,3 +78,9 @@
     text-decoration: none !important;
     text-transform: uppercase;
 }
+
+@media (max-width: 375px) {
+    .main .main-content {
+        padding-top: 40px;
+    }
+}

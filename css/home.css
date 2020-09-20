@@ -1246,6 +1246,20 @@ p.main-link {
 }
 
 @media (max-width: 767px) {
+
+  .home-team {
+    padding-left: 0;
+    padding-right: 13px;
+  }
+
+  .team-pretext {
+    padding-left: 13px;
+  }
+
+  .sl-team-wr {
+    margin-left: 20px;
+    margin-right: -20px;
+  }
   .main.home {
     padding-bottom: 320px;
   }

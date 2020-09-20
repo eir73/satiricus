@@ -20,10 +20,10 @@ if(window.innerWidth < 1200) {
     slidesPerView: 4,
     spaceBetween: 15,
     breakpoints: {
-      // when window width is >= 200px
-      320: {
+      // when window width is >= 320px
+      300: {
         slidesPerView: 'auto',
-        spaceBetween: 15
+        spaceBetween: 10
       },
       575: {
         slidesPerView: 2,

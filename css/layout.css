@@ -266,7 +266,10 @@ body {
     .page-heading .heading-text {
         width: 100%;
         max-width: 100%;
+        min-height: 80px;
         padding-right: 45px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         position: unset;
         transform: none;
     }
@@ -281,6 +284,7 @@ body {
     }
     .heading-text .heading {
         text-align: center;
+        font-size: 40px;
     }
 
     .blog .heading-imgwr .bg {
