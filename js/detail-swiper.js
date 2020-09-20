@@ -7,7 +7,6 @@ const swiper = new Swiper('.swiper-container', {
     prevEl: '.swiper-button-prev',
   },
   breakpoints: {
-    // when window width is >= 320px
     200: {
       slidesPerView: 'auto'
     },
@@ -15,19 +14,16 @@ const swiper = new Swiper('.swiper-container', {
       slidesPerView: 2,
       spaceBetween: 20
     },
-    // when window width is >= 480px
     768: {
       slidesPerView: 3,
       spaceBetween: 30
     },
-    // when window width is >= 640px
     992: {
       slidesPerView: 4,
       spaceBetween: 30
     }
   }
 });
-
 
 if (window.innerWidth < 660) {
   const btn = document.querySelector('.seats-buy-btn')
@@ -37,4 +33,3 @@ if (window.innerWidth < 660) {
     freeMode: true,
   });
 }
-

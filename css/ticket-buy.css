@@ -1,12 +1,13 @@
 .main-content {
-    display: flex;
-    flex-wrap: wrap;
-    width: 1110px;
-    padding-top: 0;
-    margin: 50px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1110px;
+  padding-top: 0;
+  margin: 50px auto 0;
 }
 
-.back-wr, .confirm-wr {
+.back-wr,
+.confirm-wr {
   width: 100%;
 }
 
@@ -32,9 +33,9 @@
 }
 
 .form-input-wr {
-    position: relative;
-    margin-bottom: 20px;
-    width: 540px;
+  position: relative;
+  margin-bottom: 20px;
+  width: 540px;
 }
 
 .form-input-wr:nth-child(6) {
@@ -63,8 +64,8 @@
   background-color: #C6A564;
 }
 
-.input-text:focus ~ .floating-label,
-.input-text:not(:focus):valid ~ .floating-label{
+.input-text:focus~.floating-label,
+.input-text:not(:focus):valid~.floating-label {
   top: -6px;
   left: 20px;
   font-size: 10px;
@@ -137,7 +138,7 @@ label.radio-label {
   align-items: center;
 }
 
-.form-radio-wr + .form-radio-wr {
+.form-radio-wr+.form-radio-wr {
   margin-bottom: 0;
 }
 
@@ -174,7 +175,7 @@ label.radio-label {
   border: 1px solid #ccc;
 }
 
-.form-radio:hover ~ .checkmark {
+.form-radio:hover~.checkmark {
   background-color: #eee;
 }
 
@@ -183,14 +184,14 @@ label.radio-label {
   position: absolute;
   display: none;
   top: 5px;
-	left: 5px;
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	background-color: red;
+  left: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: red;
 }
 
-input:checked ~ .checkmark:after {
+input:checked~.checkmark:after {
   display: block;
 }
 
@@ -224,7 +225,8 @@ input:checked ~ .checkmark:after {
   border-image: url(../img/ticket-border.png) 1;
 }
 
-.heading-title, .heading-date {
+.heading-title,
+.heading-date {
   flex-direction: column;
 }
 
@@ -259,7 +261,7 @@ input:checked ~ .checkmark:after {
   width: max-content;
 }
 
-.heading-date > * {
+.heading-date>* {
   text-align: center;
 }
 
@@ -350,7 +352,7 @@ input:checked ~ .checkmark:after {
   width: 171px;
   height: 50px;
   margin-left: 20px;
-  text-align: center;  
+  text-align: center;
   border: none;
   outline: none !important;
 }
@@ -398,6 +400,7 @@ input:checked ~ .checkmark:after {
     margin-left: 0;
     width: 100%;
   }
+
   .form-heading:before {
     width: 22px;
     left: -42px;
@@ -428,7 +431,7 @@ input:checked ~ .checkmark:after {
     display: flex;
   }
 
-  .content-wr > * {
+  .content-wr>* {
     width: 100% !important;
     max-width: 100% !important;
   }

@@ -1,7 +1,7 @@
 const logoImg = document.getElementById('logo')
 const headerBlack = document.querySelector('.header-black')
 
-if(!headerBlack) {
+if (!headerBlack) {
   logoImg.setAttribute('src', './img/header-logo-white.png')
 }
 
