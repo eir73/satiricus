@@ -12,15 +12,15 @@ if (window.innerWidth < 1200) {
         slidesPerView: 'auto',
         spaceBetween: 10,
       },
-      576: {
+      575: {
         slidesPerView: 2,
         spaceBetween: 15
       },
-      768: {
+      767: {
         slidesPerView: 3,
         spaceBetween: 15
       },
-      992: {
+      991: {
         slidesPerView: 4,
         spaceBetween: 15
       }

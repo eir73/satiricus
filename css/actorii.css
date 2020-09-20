@@ -133,8 +133,7 @@
 
   .team-item.team-item.director {
     justify-self: unset;
-    margin-left: 43px !important;
-    margin-right: 42px !important;
+    margin-left: 0;
   }
 
   .swiper-pagination-bullet-active {
@@ -188,6 +187,11 @@
 
 
 @media (max-width: 575px) {
+  .team-item.team-item.director {
+    margin-left: 43px !important;
+    margin-right: 42px !important;
+  }
+
   .item-text.item-text-name {
     line-height: 20px;
   }

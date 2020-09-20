@@ -836,6 +836,10 @@ span.busy::before {
 @media (max-width: 660px) {
   .seats-map-wr {
     overflow: hidden;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .d-660 {
@@ -862,6 +866,7 @@ span.busy::before {
   .seats-buy-btn {
     width: calc(100vw - 32px);
     margin-bottom: 33px;
+   
   }
 
   .seats-parter {

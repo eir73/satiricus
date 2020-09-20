@@ -310,6 +310,7 @@
     order: -1;
     border: none !important;
     outline: none !important;
+    padding-right: 0;
   }
 
   .navbar-toggler-icon .material-icons {
@@ -317,6 +318,10 @@
     position: absolute;
     top: 25px;
     left: 11px;
+  }
+
+  .header-white .navbar-toggler-icon .material-icons {
+    color: #000;
   }
 
   .nav-item {
