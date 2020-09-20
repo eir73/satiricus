@@ -525,7 +525,8 @@
   width: 100%;
   height: 100%;
   background-image: url(../img/home-video-img.jpg);
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
   border: none;
   overflow: hidden;
   opacity: 1;
@@ -1059,10 +1060,11 @@ p.main-link {
   .citate-person {
     min-width: 200px;
   }
-.l-wr {
-  width: 100%;
-  justify-content: space-between;
-}
+
+  .l-wr {
+    width: 100%;
+    justify-content: space-between;
+  }
 
   .citate-text {
     width: unset;
@@ -1071,6 +1073,7 @@ p.main-link {
   .home-map {
     margin-left: -87px;
   }
+
   .home-map .heading-text {
     width: 100%;
     max-width: 100%;
@@ -1078,28 +1081,33 @@ p.main-link {
     bottom: 0;
     transform: none;
   }
-      .team-item {
-        width: unset;
-        min-width: calc(25% - 11px);
-      }
-.sl-team-wr {
-  overflow: hidden;
-}
-      .home .team-wr {
-        flex-wrap: nowrap;
-        justify-content: unset;
-      }
-      .swiper-pagination-bullets {
-        display: flex;
-        justify-content: center;
-      }
-      .swiper-pagination-bullet-active {
-        background-color: #818181 !important;
-      }
 
-      .main.home {
-        padding-bottom: 500px;
-      }
+  .team-item {
+    width: unset;
+    min-width: calc(25% - 11px);
+  }
+
+  .sl-team-wr {
+    overflow: hidden;
+  }
+
+  .home .team-wr {
+    flex-wrap: nowrap;
+    justify-content: unset;
+  }
+
+  .swiper-pagination-bullets {
+    display: flex;
+    justify-content: center;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #818181 !important;
+  }
+
+  .main.home {
+    padding-bottom: 500px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -1108,13 +1116,16 @@ p.main-link {
     padding-left: 20px;
     padding-right: 20px;
   }
+
   .main.home {
     padding-bottom: 400px;
   }
+
   .team-item {
     width: unset;
     min-width: calc(33.33% - 10px);
   }
+
   .home-map .heading {
     margin-right: 0;
     margin-bottom: 30px;
@@ -1127,6 +1138,7 @@ p.main-link {
     flex-direction: column;
     align-items: center;
   }
+
   .citate-text {
     margin-right: 10px;
   }
@@ -1194,13 +1206,14 @@ p.main-link {
     margin-bottom: 100px;
   }
 
-  .home-gallery .pr95, .home-gallery .pl95 {
+  .home-gallery .pr95,
+  .home-gallery .pl95 {
     padding-left: 0;
-    padding-right: 0; 
+    padding-right: 0;
   }
 
   .home-gallery .main-link {
-    display: none !important; 
+    display: none !important;
   }
 
   .home-gallery-col {
@@ -1209,7 +1222,7 @@ p.main-link {
     flex-wrap: wrap;
   }
 
-  .home-gallery-col > * {
+  .home-gallery-col>* {
     width: 100%;
   }
 
@@ -1232,11 +1245,12 @@ p.main-link {
   }
 }
 
-.m-age, .info-sala {
+.m-age,
+.info-sala {
   display: none;
 }
 
-.videoWrapperActive + .video-description {
+.videoWrapperActive+.video-description {
   display: none;
 }
 
@@ -1260,56 +1274,59 @@ p.main-link {
     margin-left: 20px;
     margin-right: -20px;
   }
+
   .main.home {
     padding-bottom: 320px;
   }
+
   .team-item {
     width: unset;
     min-width: calc(50% - 8px);
   }
-.l-wr {
-  flex-direction: column;
-}
 
-.home-map {
-  margin-right: 0;
-  margin-left: -45px;
-}
+  .l-wr {
+    flex-direction: column;
+  }
 
-.heading-text .ticket-buy-link {
-  margin-right: 0;
-}
+  .home-map {
+    margin-right: 0;
+    margin-left: -45px;
+  }
 
-.quot-wr {
-  margin-left: 0; 
-  margin-top: 10px;
-}
+  .heading-text .ticket-buy-link {
+    margin-right: 0;
+  }
 
-.citate-wr {
-  align-items: start;
-}
+  .quot-wr {
+    margin-left: 0;
+    margin-top: 10px;
+  }
 
-.citate-wr:nth-child(3) {
-  border-top: none !important;
-}
+  .citate-wr {
+    align-items: start;
+  }
 
-.home-citate .form-heading  {
-  margin-bottom: 43px;
-}
+  .citate-wr:nth-child(3) {
+    border-top: none !important;
+  }
 
-.citate-person {
-  padding-left: 19px;
-  margin-top: 20px;
-}
+  .home-citate .form-heading {
+    margin-bottom: 43px;
+  }
 
-.mob-link {
-  display: flex !important;
-  justify-content: center;
-}
+  .citate-person {
+    padding-left: 19px;
+    margin-top: 20px;
+  }
 
-.cart-tickets {
-  margin-bottom: 70px;
-}
+  .mob-link {
+    display: flex !important;
+    justify-content: center;
+  }
+
+  .cart-tickets {
+    margin-bottom: 70px;
+  }
 
   .spec-name {
     font-size: 45px;
@@ -1354,7 +1371,8 @@ p.main-link {
     width: 100%;
     text-align: center;
   }
-/* wwwwwwwwwwww */
+
+  /* wwwwwwwwwwww */
   .cart-ticket {
     margin-bottom: 30px;
     flex-direction: column;
@@ -1362,12 +1380,13 @@ p.main-link {
     justify-content: space-between;
   }
 
-  .cart-ticket > .d-flex {
+  .cart-ticket>.d-flex {
     width: 100%;
     min-width: 100%;
   }
 
-  .heading-date, .info-sala {
+  .heading-date,
+  .info-sala {
     display: flex;
   }
 
@@ -1401,7 +1420,8 @@ p.main-link {
     line-height: 30px;
   }
 
-  .heading-date .day, .info-age .info-text {
+  .heading-date .day,
+  .info-age .info-text {
     display: none;
   }
 
@@ -1476,12 +1496,12 @@ p.main-link {
     text-align: right;
     color: #BA2126;
     margin-bottom: 0;
-}
+  }
 
   .heading-title {
     min-height: 372px;
   }
-  
+
   .cart .title-name {
     min-height: 372px;
     padding-top: 70px;
@@ -1492,9 +1512,11 @@ p.main-link {
     background-size: contain;
   }
 
-  .tickets-total, .tickets-wr .home-link {
+  .tickets-total,
+  .tickets-wr .home-link {
     display: none;
   }
+
   .home .title-name {
     font-size: 40px;
     min-height: 372px;
@@ -1502,14 +1524,15 @@ p.main-link {
     padding-bottom: 145px;
   }
 
-  .circle-bottom, .circle-top {
+  .circle-bottom,
+  .circle-top {
     left: calc(50% - 27px);
   }
 
   .main-video-wr {
     margin-bottom: 0;
   }
-  
+
   .noutati-col-video {
     margin-bottom: 0;
   }
@@ -1554,30 +1577,33 @@ p.main-link {
   .main.home {
     padding-bottom: 230px;
   }
+
   .team-item {
     width: unset;
     min-width: calc(66.66% - 10px);
   }
 
-.quot-wr {
-  margin-right: 19px;
-}
-.map-message {
-  margin-top: 57px;
-}
-.home-map {
-  margin-left: -7px;
-  height: 570px;
-  background-image: url(../img/home-map-geo-m.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-y: -200px;
-}
+  .quot-wr {
+    margin-right: 19px;
+  }
 
-.citate-wr {
-  padding-left: 13px;
-  padding-right: 13px;
-}
+  .map-message {
+    margin-top: 57px;
+  }
+
+  .home-map {
+    margin-left: -7px;
+    height: 570px;
+    background-image: url(../img/home-map-geo-m.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -200px;
+  }
+
+  .citate-wr {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
 
   .slide-img img {
     right: 0;
@@ -1597,7 +1623,8 @@ p.main-link {
     padding-right: 7px !important;
   }
 
-  .text-note .desc-text, .text-note .main-link {
+  .text-note .desc-text,
+  .text-note .main-link {
     display: none;
   }
 
@@ -1605,6 +1632,7 @@ p.main-link {
     padding-left: 5px;
     padding-right: 5px;
   }
+
   .text-note {
     padding-bottom: 24px;
     padding-top: 24px;

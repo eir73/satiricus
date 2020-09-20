@@ -155,7 +155,7 @@
 
 @media (max-width: 991px) {
   .main-content {
-  padding-top: 70px;
+    padding-top: 70px;
   }
 
   .actorii .heading-imgwr .bg {
@@ -174,10 +174,12 @@
     padding-left: 13px !important;
     padding-right: 13px;
   }
+
   .team-item {
     min-width: calc(50% - 8px);
     width: unset;
   }
+
   .actorii .heading-imgwr .bg {
     height: 350px;
     background-size: cover;
@@ -195,6 +197,7 @@
   .item-text.item-text-name {
     line-height: 20px;
   }
+
   .sl-team-wr {
     margin-right: -13px;
     width: unset;
@@ -205,6 +208,7 @@
     min-width: calc(66.66% - 10px);
     margin-left: 10px !important;
   }
+
   .actorii .heading-imgwr .bg {
     height: calc(46vw);
     align-items: center;

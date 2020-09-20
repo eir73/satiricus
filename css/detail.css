@@ -788,9 +788,9 @@ span.busy::before {
     margin-bottom: 10px;
   }
 
-.detail .heading-imgwr .bg {
-  background-size: cover;
-}
+  .detail .heading-imgwr .bg {
+    background-size: cover;
+  }
 
   .video_wrapper {
     width: 525px;
@@ -866,7 +866,7 @@ span.busy::before {
   .seats-buy-btn {
     width: calc(100vw - 32px);
     margin-bottom: 33px;
-   
+
   }
 
   .seats-parter {
@@ -889,7 +889,8 @@ span.busy::before {
     width: 60%;
   }
 
-  .prev, .next {
+  .prev,
+  .next {
     top: unset;
     bottom: -70px;
   }

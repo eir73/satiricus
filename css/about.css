@@ -1,50 +1,50 @@
 .main.about {
     background-color: #161616;
     padding-bottom: 0;
-  }
+}
 
-  .about-blocks {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 150px;
-  }
+.about-blocks {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+}
 
-  .about-block {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 100px;
-  }
+.about-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
 
-  .about-block:last-child {
-      margin-bottom: 0;
-  }
+.about-block:last-child {
+    margin-bottom: 0;
+}
 
-  .about-block:nth-child(2) .block-text-wr {
-      padding-top: 45px;
-  }
+.about-block:nth-child(2) .block-text-wr {
+    padding-top: 45px;
+}
 
-  .block-text-wr {
-      padding-top: 25px;
-  }
+.block-text-wr {
+    padding-top: 25px;
+}
 
- .about-block .block-text-wr {
-      margin-right: 30px;
-  }
+.about-block .block-text-wr {
+    margin-right: 30px;
+}
 
-  .about-block.block-img-first .block-text-wr {
-      margin-right: 0;
-      padding-top: 15px;
-  }
+.about-block.block-img-first .block-text-wr {
+    margin-right: 0;
+    padding-top: 15px;
+}
 
-  .about-block.block-img-first .block-img-wr {
-      margin-right: 30px;
-  }
+.about-block.block-img-first .block-img-wr {
+    margin-right: 30px;
+}
 
-  .mb-30 {
-      margin-bottom: 30px;
-  }
+.mb-30 {
+    margin-bottom: 30px;
+}
 
-  .block-text {
+.block-text {
     font-weight: normal;
     font-size: 14px;
     line-height: 25px;
@@ -71,7 +71,7 @@
     bottom: 0;
     right: 40px;
     top: 90%;
-     /* transform: translate(0,60%); */
+    /* transform: translate(0,60%); */
 }
 
 .block-img-first {
@@ -81,18 +81,18 @@
 .block-text.block-text-bold {
     font-weight: 600;
     color: #fff;
-  }
+}
 
-  .about-spectacles {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 25px;
-  }
+.about-spectacles {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
 
-  .about-spectacles .form-heading {
+.about-spectacles .form-heading {
     line-height: 40px;
     margin-bottom: 30px;
-  }
+}
 
 .spectacles-row {
     display: flex;
@@ -107,7 +107,7 @@
     border-bottom: none;
 }
 
-.spectacles-row > * {
+.spectacles-row>* {
     display: block;
     font-size: 14px;
     line-height: 25px;
@@ -122,7 +122,8 @@
     color: #fff;
 }
 
-.spectacle-link, .tours-link {
+.spectacle-link,
+.tours-link {
     display: flex;
     align-items: center;
     font-weight: 600;
@@ -195,7 +196,8 @@
     color: #afafaf;
 }
 
-.about-tours, .about-gallery {
+.about-tours,
+.about-gallery {
     display: flex;
     flex-direction: column;
     margin-bottom: 150px;
@@ -236,33 +238,39 @@
 .gallery-wr {
     margin-bottom: 50px;
     display: grid;
-    grid-template-areas: 
-    "img1 img2 img3 img3"
-    "img4 img5 img6 img6"
-    "img7 img7 img6 img6";
+    grid-template-areas:
+        "img1 img2 img3 img3"
+        "img4 img5 img6 img6"
+        "img7 img7 img6 img6";
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
 }
 
-.gallery-wr > .gallery-item:nth-child(1) {
+.gallery-wr>.gallery-item:nth-child(1) {
     grid-area: img1;
 }
-.gallery-wr > .gallery-item:nth-child(2) {
+
+.gallery-wr>.gallery-item:nth-child(2) {
     grid-area: img2;
 }
-.gallery-wr > .gallery-item:nth-child(3) {
+
+.gallery-wr>.gallery-item:nth-child(3) {
     grid-area: img3;
 }
-.gallery-wr > .gallery-item:nth-child(4) {
+
+.gallery-wr>.gallery-item:nth-child(4) {
     grid-area: img4;
 }
-.gallery-wr > .gallery-item:nth-child(5) {
+
+.gallery-wr>.gallery-item:nth-child(5) {
     grid-area: img5;
 }
-.gallery-wr > .gallery-item:nth-child(6) {
+
+.gallery-wr>.gallery-item:nth-child(6) {
     grid-area: img6;
 }
-.gallery-wr > .gallery-item:nth-child(7) {
+
+.gallery-wr>.gallery-item:nth-child(7) {
     grid-area: img7;
 }
 
@@ -275,9 +283,10 @@
     align-items: center;
     min-width: 206px;
     margin: 0 auto;
-  }
-  
-  .gallery-pagination .prev, .gallery-pagination .next {
+}
+
+.gallery-pagination .prev,
+.gallery-pagination .next {
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -288,96 +297,101 @@
     border: 1px solid #4F4F4F;
     color: #fff;
     background-repeat: no-repeat;
-  }
-  
-  .prev {
+}
+
+.prev {
     background-image: url(../img/left.svg);
     background-position: 45% 50%;
     margin-right: 20px;
-  }
-  
-  .next {
+}
+
+.next {
     background-image: url(../img/right.svg);
     background-position: 50% 50%;
-  }
-  
-  .pagination-num {
+}
+
+.pagination-num {
     cursor: pointer;
     font-weight: 600;
     font-size: 14px;
     line-height: 30px;
     color: #fff;
     margin-right: 20px;
-  }
-  
-  .pagination-num.active {
-    color: #C6A564;
-  }
+}
 
-  @media (max-width: 1199px) {
+.pagination-num.active {
+    color: #C6A564;
+}
+
+@media (max-width: 1199px) {
     .block-img-wr {
         min-width: 345px;
     }
-  }
+}
 
-  @media (max-width: 991px) {
+@media (max-width: 991px) {
     .about-block .block-text-wr {
         margin-right: 0;
     }
+
     .about .heading-imgwr .bg {
         background-position: center;
-      }
+    }
 
-      .about-block {
-          flex-direction: column;
-          margin-bottom: 40px;
-      }
+    .about-block {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
 
-      .block-text-wr {
-          padding-top: 0;
-          margin-bottom: 30px;
-      }
+    .block-text-wr {
+        padding-top: 0;
+        margin-bottom: 30px;
+    }
 
-      .about-blocks, .history-blocks, .about-tours, .about-gallery {
-          margin-bottom: 75px;
-      }
+    .about-blocks,
+    .history-blocks,
+    .about-tours,
+    .about-gallery {
+        margin-bottom: 75px;
+    }
 
-      .gallery-wr {
-          grid-gap: 20px;
-      }
-  }
+    .gallery-wr {
+        grid-gap: 20px;
+    }
+}
 
-  @media (max-width: 767px) {
-      .gallery-wr {
+@media (max-width: 767px) {
+    .gallery-wr {
         grid-gap: 15px;
     }
+
     .about .main-content {
         padding-left: 13px !important;
         padding-right: 13px;
-      }
+    }
 
-      .about .heading-imgwr .bg {
+    .about .heading-imgwr .bg {
         height: 350px;
         background-size: cover;
         align-items: start;
-      }
+    }
 
-      .spectacle-name {
-          max-width: 66%;
-      }
-  }
+    .spectacle-name {
+        max-width: 66%;
+    }
+}
 
-  @media (max-width: 575px) {
+@media (max-width: 575px) {
     .about .heading-imgwr .bg {
         height: calc(46vw);
         align-items: center;
-      }
+    }
 
-      .gallery-wr {
+    .gallery-wr {
         grid-gap: 5px;
     }
 
     .block-img-wr {
         min-width: 100% !important;
     }
-  }
+}
