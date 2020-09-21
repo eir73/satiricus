@@ -3,6 +3,11 @@
   background-color: #080808;
 }
 
+.place .main-content {
+  width: 100%;
+  background-color: transparent;
+}
+
 .main.detail {
   padding-bottom: 0;
 }
@@ -424,6 +429,10 @@
   margin-bottom: 2px;
 }
 
+.place .parter-col svg {
+  margin-bottom: 2px;
+}
+
 .parter-col {
   display: flex;
   flex-direction: column;
@@ -446,7 +455,7 @@
   background-color: #161616;
 }
 
-.detail svg {
+.detail svg, .place svg {
   display: block;
   width: 20px;
   padding: 0;
@@ -572,6 +581,14 @@ svg.busy {
   fill: #292929 !important;
 }
 
+.place svg.busy {
+  fill: #f8f8f8 !important;
+}
+
+.place svg.busy path {
+  stroke: #ededed !important;
+}
+
 svg.busy path {
   stroke: #454545 !important;
 }
@@ -692,7 +709,7 @@ span.busy::before {
     justify-content: space-evenly;
   }
 
-  .detail .main-content {
+  .detail .main-content, .place .main-content {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
@@ -880,7 +897,7 @@ span.busy::before {
     margin-left: 80px;
   }
 
-  .detail .detail-slider {
+  .detail .detail-slider, .place .detail-slider {
     margin-right: 0;
     margin-left: 0;
   }
@@ -931,6 +948,88 @@ span.busy::before {
     margin-top: 0;
     margin-left: 25px;
   }
+}
+
+.place .main-content {
+  padding-top: 50px;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 29px; 
+}
+
+.place .spec-name {
+  margin-bottom: 9px;
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 64px;
+  color: #C6A564;
+}
+
+.place .spec-date {
+  margin-bottom: 14px;
+  font-family: 'Lato', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+  color: #161616;
+}
+
+.place .seats-map {
+  margin-top: 0;
+}
+
+.place .seats-map-wr {
+  padding-bottom: 120px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #EDEDED;
+}
+
+.act-link {
+  display: block;
+  z-index: 100;
+  width: 222px;
+  position: relative;
+  padding-bottom: 9px;
+  margin-bottom: -1px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ededed;
+  text-decoration: none !important;
+  border-bottom: 1px solid #EDEDED;
+}
+
+.act-link:not(:first-child) {
+  padding-left: 20px;
+}
+
+.act-link:hover,
+.act-link.active {
+  color: #C6A564;
+  border-bottom: 1px solid #c6a564;
+}
+
+.back-wr {
+  width: 100%;
+}
+
+.link-back {
+  display: block;
+  padding-right: 30px;
+  margin-bottom: 20px;
+  width: min-content;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  color: #C6A564 !important;
 }
 
 @media (max-width: 512px) {
