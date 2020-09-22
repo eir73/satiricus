@@ -143,6 +143,10 @@
   text-transform: uppercase;
 }
 
+.bt:hover {
+  background-color: #BA2126;
+}
+
 .swiper-pagination {
   transform: rotate(90deg);
   top: 50% !important;
@@ -286,6 +290,9 @@
   flex-direction: column;
   justify-content: space-between;
   width: -webkit-fill-available;
+  width: -moz-fill-available;
+  width: -ms-fill-available;
+  width: 100%;
   background: linear-gradient(269.55deg, rgba(32, 32, 32, 0) 85.72%, #202020 99.54%),
     url(../img/cart-ticket-img.png) no-repeat;
   background-position: bottom 0px right -1px;
@@ -456,6 +463,9 @@
   position: relative;
   height: 243px;
   overflow-y: auto;
+  scrollbar-color: grey;
+  scrollbar-width: thin;
+  scrollbar-track-color: gray;
   padding: 20px 24px 0;
 }
 
@@ -491,14 +501,19 @@
   text-decoration: none !important;
   color: #C6A564 !important;
 }
-
+/*
 .ticket-buy-link.link-red {
+  background-color: #BA2126;
+}*/
+
+.ticket-buy-link:hover {
   background-color: #BA2126;
 }
 
 .ticket-buy-link.link-busy {
   cursor: default;
   opacity: 0.3;
+  background-color: #fff;
 }
 
 .home-noutati {
@@ -1136,7 +1151,7 @@ p.main-link {
   .swiper-pages {
     display: none;
   }
-  
+
   .home-team {
     padding-top: 80px;
     padding-left: 20px;

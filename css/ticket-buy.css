@@ -295,6 +295,9 @@ input:checked~.checkmark:after {
   border-bottom: 1px solid #4F4F4F;
   max-height: 240px;
   overflow-y: auto;
+  scrollbar-color: grey;
+  scrollbar-width: thin;
+  scrollbar-track-color: gray;
 }
 
 .tickets-ticket {
@@ -383,6 +386,7 @@ input:checked~.checkmark:after {
 
   .main form {
     width: -webkit-fill-available;
+    width: 100%;
     max-width: 540px;
   }
 
