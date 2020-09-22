@@ -126,7 +126,7 @@
 }
 
 .btn-buy:hover {
-  background-color: #161616;
+  background-color: #BA2126;
 }
 
 .detail svg,
@@ -307,7 +307,7 @@ span.red::before {
 }
 
 span.busy::before {
-  background-color: #292929;
+  background-color: #ededed;
 }
 
 .seats-total-wr {

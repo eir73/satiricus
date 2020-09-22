@@ -140,6 +140,9 @@
   flex-direction: column;
   justify-content: space-between;
   width: -webkit-fill-available;
+  width: -moz-fill-available;
+  width: -ms-fill-available;
+  width: 100%;
   background: linear-gradient(269.55deg, rgba(32, 32, 32, 0) 85.72%, #202020 99.54%),
     url(../img/cart-ticket-img.png) no-repeat;
   background-position: bottom 0px right -1px;
@@ -304,6 +307,9 @@
   position: relative;
   height: 243px;
   overflow-y: auto;
+  scrollbar-color: grey;
+  scrollbar-width: thin;
+  scrollbar-track-color: gray;
   padding: 40px 15px 0 15px;
 }
 

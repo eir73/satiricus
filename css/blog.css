@@ -389,3 +389,26 @@
     margin-left: 25px;
   }
 }
+
+
+.blog.index .home-link {
+  width: 25%;
+  margin-bottom: 10px;
+  font-family: "Lora", serif;
+  font-size: 26px;
+  line-height: 34px;
+  color: #C6A564 !important;
+  text-decoration: none;
+}
+
+.blog.index .content-wr {
+  flex-wrap: wrap;
+}
+
+.blog.index .form-heading {
+  margin-bottom: 30px;
+}
+
+.index .main-content {
+  padding-top: 50px;
+}
