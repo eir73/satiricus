@@ -46,13 +46,22 @@
   width: 335px;
 }
 
-.footer-item {
+.footer-item a {
   white-space: pre;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
-  color: #afafaf;
+  color: #afafaf !important;
+  text-decoration: none;
+}
+
+.footer-item {
   margin-bottom: 5px;
+}
+
+#last .footer-item a {
+  white-space: unset;
+  line-height: 20px;
 }
 
 #last .footer-item:not(:first-child) {
@@ -71,11 +80,14 @@
 }
 
 .footer-item:first-child {
-  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-item:first-child a {
+  color: #fff !important;
   font-weight: 600;
   font-size: 16px;
-  line-height: 30px;
-  margin-bottom: 15px;
+  line-height: 30px !important;
 }
 
 .footer-contacts {

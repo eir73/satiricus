@@ -182,6 +182,18 @@ body {
   display: none;
 }
 
+.ticket-buy-link {
+  transition: background-color ease 0.4s;
+}
+
+.main-link {
+  transition: color ease 0.2s;
+}
+
+.main-link:hover {
+  color: #e6c584 !important;
+}
+
 .heading-text.multiple {
   padding-top: 27px;
   padding-bottom: 27px;

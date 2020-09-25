@@ -78,9 +78,60 @@
   display: inline-table;
 }
 
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.ham8 .top {
+  stroke-dasharray: 40 160;
+}
+.ham8 .middle {
+  stroke-dasharray: 40 142;
+  transform-origin: 50%;
+  transition: transform 400ms;
+}
+.ham8 .bottom {
+  stroke-dasharray: 40 85;
+  transform-origin: 50%;
+  transition: transform 400ms, stroke-dashoffset 400ms;
+}
+.ham8.active .top {
+  stroke-dashoffset: -64px;
+}
+.ham8.active .middle {
+  transform: rotate(90deg);
+}
+.ham8.active .bottom {
+  stroke-dashoffset: -64px;
+}
+
+.line {
+  fill:none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke:#fff;
+  stroke-width:5.5;
+  stroke-linecap:round;
+}
+
 .nav-item .nav-link {
   padding: 0 !important;
   margin-right: 35px;
+  transition: color ease 0.4s;
+}
+
+.nav-item .nav-link:hover {
+  color: #4f4f4f;
 }
 
 .nav-item:first-child .nav-link {
@@ -324,14 +375,14 @@
     padding-right: 0;
   }
 
-  .navbar-toggler-icon .material-icons {
+  .navbar-toggler-icon svg {
     color: #fff;
     position: absolute;
-    top: 25px;
-    left: 11px;
+    top: 15px;
+    left: 4px;
   }
 
-  .header-white .navbar-toggler-icon .material-icons {
+  .header-white .navbar-toggler-icon svg {
     color: #000;
   }
 
