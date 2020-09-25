@@ -52,14 +52,21 @@
 .book-btn {
   background-color: #fff;
   border: 1px solid #C6A564;
+  transition: background-color ease 0.5s;
 }
+
+.book-btn:hover {
+  background-color: #f0f0f0;
+}
+
 
 .home-btn {
   background-color: #BA2126;
+  transition: background-color ease 0.5s;
 }
 
 .home-btn:hover {
-  background-color: #bf2631;
+  background-color: #da3136 !important;
 }
 
 .home-link {

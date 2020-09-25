@@ -123,6 +123,7 @@
   text-transform: uppercase;
   text-decoration: none !important;
   color: #C6A564 !important;
+  transition: background-color ease 0.4s;
 }
 
 .btn-buy:hover {
@@ -138,6 +139,11 @@
   border: none !important;
   outline: none !important;
   cursor: pointer;
+  fill: #fff;
+}
+
+svg {
+  transition: fill ease 0.4s;
 }
 
 .mb50 {
@@ -338,6 +344,7 @@ span.busy::before {
   margin-left: 20px;
   border: none;
   outline: none !important;
+  transition: background-color ease 0.4s;
 }
 
 .home-btn {
@@ -345,7 +352,7 @@ span.busy::before {
 }
 
 .home-btn:hover {
-  background-color: #bf2631;
+  background-color: #ca3146;
 }
 
 .home-link {
@@ -416,6 +423,7 @@ span.busy::before {
   color: #ededed;
   text-decoration: none !important;
   border-bottom: 1px solid #EDEDED;
+  transition: all ease 0.3s;
 }
 
 .act-link:not(:first-child) {
@@ -443,6 +451,7 @@ span.busy::before {
   text-transform: uppercase;
   text-decoration: none !important;
   color: #C6A564 !important;
+  cursor: pointer;
 }
 
 @media (max-width: 1199px) {

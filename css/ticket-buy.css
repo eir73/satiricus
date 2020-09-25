@@ -22,6 +22,11 @@
   text-transform: uppercase;
   text-decoration: none !important;
   color: #C6A564 !important;
+  transition: color ease 0.3s;
+}
+
+.link-back:hover {
+  color: #cfaf5f !important;
 }
 
 .content-wr {
@@ -80,6 +85,7 @@
   height: 50px;
   border: 1px solid #EDEDED;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .input-text:focus {
@@ -107,6 +113,7 @@
   height: 18px;
   width: 18px;
   margin-right: 12px;
+  cursor: pointer;
 }
 
 .red-link {
@@ -173,6 +180,8 @@ label.radio-label {
   background-color: #fff;
   border-radius: 50%;
   border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color ease 0.4s;;
 }
 
 .form-radio:hover~.checkmark {
@@ -358,6 +367,7 @@ input:checked~.checkmark:after {
   text-align: center;
   border: none;
   outline: none !important;
+  transition: background-color ease 0.4s;
 }
 
 .home-btn {
@@ -365,7 +375,7 @@ input:checked~.checkmark:after {
 }
 
 .home-btn:hover {
-  background-color: #bf2631;
+  background-color: #ca3146;
 }
 
 .home-link {

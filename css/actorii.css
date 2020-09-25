@@ -27,6 +27,7 @@
   color: #5F5F5F;
   text-decoration: none !important;
   border-bottom: 1px solid transparent;
+  transition: all ease 0.4s;
 }
 
 .act-link:first-child {
