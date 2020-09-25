@@ -114,7 +114,13 @@
 
 .spectacle-name {
   text-decoration: none !important;
-  color: #afafaf
+  color: #afafaf;
+  transition: color ease 0.3s;
+  cursor: pointer;
+}
+
+.spectacle-name:hover {
+  color: #fff;
 }
 
 .spectacle-author {
@@ -131,7 +137,13 @@
   text-transform: uppercase;
   text-decoration: none !important;
   color: #c6a564;
-  margin-left: auto
+  margin-left: auto;
+  transition: color ease 0.3s;
+}
+
+.spectacle-link:hover,
+.tours-link:hover {
+  color: #d6c584;
 }
 
 .about-history .form-heading {
