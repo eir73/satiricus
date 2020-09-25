@@ -13,6 +13,10 @@
   height: calc(100vh - 100px);
 }
 
+.bt.home-btn:hover {
+  background-color: #cA3136;
+}
+
 .swiper-container {
   height: 100%;
 }
@@ -128,6 +132,7 @@
 
 .home-btn {
   background-color: #BA2126;
+  transition: background-color ease 0.4s; 
 }
 
 .home-btn:hover {
@@ -500,14 +505,15 @@
   text-transform: uppercase;
   text-decoration: none !important;
   color: #C6A564 !important;
+  transition: background-color ease 0.3s;
 }
 /*
 .ticket-buy-link.link-red {
   background-color: #BA2126;
 }*/
 
-.ticket-buy-link:hover {
-  background-color: #BA2126;
+.home-map .ticket-buy-link:hover {
+  background-color: #cA3136 !important;
 }
 
 .ticket-buy-link.link-busy {
@@ -699,11 +705,19 @@
 }
 
 .note-title {
+  display: block;
   margin-bottom: 0;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
+  text-decoration: none !important;
   color: #FFFFFF;
+  cursor: pointer;
+  transition: color ease 0.4s;
+}
+
+.note-title:hover {
+  color: #afafaf;
 }
 
 .desc-text {
@@ -754,6 +768,8 @@ p.main-link {
 .gallery-img-wr {
   display: flex;
   flex-direction: column;
+  text-decoration: none !important;
+  cursor: pointer;
 }
 
 .gallery-img-wr img {
@@ -763,11 +779,18 @@ p.main-link {
 }
 
 .img-name {
+  display: block;
   margin-bottom: 5px;
   font-weight: 600;
   font-size: 16px;
   line-height: 25px;
+  text-decoration: none !important;
   color: #FFFFFF;
+  transition: color ease 0.3s;
+}
+
+.img-name:hover {
+  color: #bfbfbf !important;
 }
 
 .mb55 {
@@ -892,11 +915,19 @@ p.main-link {
 }
 
 .montare-name {
+  display: block;
   margin-bottom: 0;
   font-family: "Lora", serif;
   font-size: 50px;
   line-height: 55px;
-  color: #FFFFFF;
+  text-decoration: none !important;
+  color: #FFFFFF !important;
+  transition: color ease 0.3s;
+  cursor: pointer;
+}
+
+.montare-name:hover {
+  color: #bfbfbf !important;
 }
 
 .montare-people {
@@ -943,6 +974,7 @@ p.main-link {
 .home-map .ticket-buy-link {
   margin-top: 0;
   margin-left: 0;
+  background-color: #BA2126;
 }
 
 .home-map .heading {

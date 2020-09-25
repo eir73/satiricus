@@ -183,7 +183,14 @@
   font-size: 12px;
   line-height: 30px;
   text-transform: uppercase;
+  text-decoration: none !important;
   color: #C6A564;
+  transition: color ease 0.3s;
+}
+
+.description-footer .video-link:hover,
+.cards-card .card-link:hover {
+  color: #d6b584;
 }
 
 .description-footer .date {
@@ -233,7 +240,7 @@
   font-size: 14px;
   line-height: 30px;
   color: #C6A564;
-  ;
+  transition: color ease 0.3s;
 }
 
 
@@ -260,17 +267,18 @@
   border: 1px solid #4F4F4F;
   color: #fff;
   background-repeat: no-repeat;
+  transition: background-color ease 0.3s;
 }
 
 .prev {
   background-image: url(../img/left.svg);
   background-position: 45% 50%;
-  margin-right: 20px;
+  margin-right: 20px
 }
 
 .next {
   background-image: url(../img/right.svg);
-  background-position: 55% 50%;
+  background-position: 50% 50%
 }
 
 .pagination-num {
@@ -280,10 +288,20 @@
   line-height: 30px;
   color: #fff;
   margin-right: 20px;
+  transition: color ease 0.3s;
 }
 
 .pagination-num.active {
-  color: #C6A564;
+  color: #c6a564
+}
+
+.pagination-num:hover {
+  color: #c6a564
+}
+
+.cards-pagination .next:hover,
+.cards-pagination .prev:hover {
+  background-color: #252525;
 }
 
 @media (max-width: 1199px) {

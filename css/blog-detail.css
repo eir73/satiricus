@@ -98,6 +98,11 @@
 .spectacle-name {
   text-decoration: none !important;
   color: #AFAFAF;
+  transition: color ease 0.3s;
+}
+
+.spectacle-name:hover {
+  color: #fff !important;
 }
 
 .spectacle-author {

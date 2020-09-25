@@ -64,10 +64,11 @@
 
 .home-btn {
   background-color: #BA2126;
+  transition: background-color ease 0.4s;
 }
 
 .home-btn:hover {
-  background-color: #bf2631;
+  background-color: #ca3136;
 }
 
 .home-link {

@@ -46,13 +46,27 @@
   width: 335px;
 }
 
-.footer-item {
+.footer-item a {
   white-space: pre;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
-  color: #afafaf;
+  color: #afafaf !important;
+  text-decoration: none;
+  transition: color ease 0.3s;
+}
+
+.footer-item a:hover {
+  color: #fff !important;
+}
+
+.footer-item {
   margin-bottom: 5px;
+}
+
+#last .footer-item a {
+  white-space: unset;
+  line-height: 20px;
 }
 
 #last .footer-item:not(:first-child) {
@@ -71,11 +85,14 @@
 }
 
 .footer-item:first-child {
-  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-item:first-child a {
+  color: #fff !important;
   font-weight: 600;
   font-size: 16px;
-  line-height: 30px;
-  margin-bottom: 15px;
+  line-height: 30px !important;
 }
 
 .footer-contacts {
@@ -106,6 +123,7 @@
   font-size: 18px;
   text-decoration: none !important;
   color: #fff;
+  transition: color ease 0.3s;
 }
 
 .soc-link:last-child {
@@ -115,6 +133,19 @@
 
 .soc-link:first-child {
   margin-bottom: 20px;
+}
+
+a.footer-item {
+  display: list-item;
+  font-size: 14px;
+  color: #afafaf !important;
+  text-decoration: none !important;
+  transition: color ease 0.4s;
+  cursor: pointer;
+}
+
+a.footer-item:hover {
+  color: #fff !important;
 }
 
 .phone {

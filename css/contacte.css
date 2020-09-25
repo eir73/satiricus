@@ -70,6 +70,7 @@
 .form-input-wr {
   position: relative;
   margin-bottom: 21px;
+  cursor: pointer;
 }
 
 .form-input-wr:first-child,
@@ -95,6 +96,7 @@
   border: 1px solid #4F4F4F;
   border-radius: 4px;
   color: #fff;
+  cursor: pointer;
 }
 
 .input-text:focus {
@@ -132,6 +134,7 @@
   margin: 0 auto;
   border: none;
   outline: none !important;
+  transition: background-color ease 0.4s;
 }
 
 .home-btn {
@@ -139,7 +142,7 @@
 }
 
 .home-btn:hover {
-  background-color: #bf2631;
+  background-color: #ca3136;
 }
 
 .home-link {

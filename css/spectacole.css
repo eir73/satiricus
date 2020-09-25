@@ -18,6 +18,7 @@
   color: #5F5F5F;
   text-decoration: none !important;
   border-bottom: 1px solid transparent;
+  transition: color ease 0.4s;
 }
 
 .act-link:first-child {
@@ -316,9 +317,14 @@
   text-transform: uppercase;
   text-decoration: none !important;
   color: #C6A564 !important;
+  transition: background-color ease 0.4s;
 }
-
+/*
 .ticket-buy-link.link-red {
+  background-color: #BA2126;
+}*/
+
+.ticket-buy-link:hover {
   background-color: #BA2126;
 }
 
@@ -347,17 +353,18 @@
   border: 1px solid #4F4F4F;
   color: #fff;
   background-repeat: no-repeat;
+  transition: background-color ease 0.4s;
 }
 
 .prev {
   background-image: url(../img/left.svg);
   background-position: 45% 50%;
-  margin-right: 20px;
+  margin-right: 20px
 }
 
 .next {
   background-image: url(../img/right.svg);
-  background-position: 55% 50%;
+  background-position: 50% 50%
 }
 
 .pagination-num {
@@ -367,10 +374,20 @@
   line-height: 30px;
   color: #fff;
   margin-right: 20px;
+  transition: color ease 0.3s;
 }
 
 .pagination-num.active {
-  color: #C6A564;
+  color: #c6a564
+}
+
+.pagination-num:hover {
+  color: #c6a564
+}
+
+.cards-pagination .next:hover,
+.cards-pagination .prev:hover {
+  background-color: #252525;
 }
 
 .spec-main-bg {

@@ -11,3 +11,8 @@ function videoPlay(wrapper) {
   wrapper.addClass('videoWrapperActive');
   iframe.attr('src', src);
 }
+
+
+if(values.length != (new Set(values)).size()) {
+  
+}
