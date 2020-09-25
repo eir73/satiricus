@@ -135,6 +135,19 @@
   margin-bottom: 20px;
 }
 
+a.footer-item {
+  display: list-item;
+  font-size: 14px;
+  color: #afafaf !important;
+  text-decoration: none !important;
+  transition: color ease 0.4s;
+  cursor: pointer;
+}
+
+a.footer-item:hover {
+  color: #fff !important;
+}
+
 .phone {
   margin-top: 5px;
   margin-bottom: 5px;
