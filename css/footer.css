@@ -53,6 +53,11 @@
   line-height: 30px;
   color: #afafaf !important;
   text-decoration: none;
+  transition: color ease 0.3s;
+}
+
+.footer-item a:hover {
+  color: #fff !important;
 }
 
 .footer-item {
@@ -118,6 +123,7 @@
   font-size: 18px;
   text-decoration: none !important;
   color: #fff;
+  transition: color ease 0.3s;
 }
 
 .soc-link:last-child {

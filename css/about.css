@@ -228,14 +228,22 @@
 }
 
 .tour-name {
+  display: block;
   margin-bottom: 0;
   font-size: 14px;
   line-height: 25px;
-  color: #afafaf
+  color: #afafaf;
+  text-decoration: none !important;
+  cursor: pointer;
+  transition: color ease 0.3s;
+}
+
+.tour-name:hover {
+  color: #fff;
 }
 
 .tours-link {
-  width: fit-content
+  width: 111px;
 }
 
 .about-gallery {
@@ -304,7 +312,8 @@
   border-radius: 50px;
   border: 1px solid #4f4f4f;
   color: #fff;
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
+  transition: background-color ease 0.3s;
 }
 
 .prev {
@@ -324,11 +333,21 @@
   font-size: 14px;
   line-height: 30px;
   color: #fff;
-  margin-right: 20px
+  margin-right: 20px;
+  transition: color ease 0.3s;
 }
 
 .pagination-num.active {
   color: #c6a564
+}
+
+.pagination-num:hover {
+  color: #c6a564
+}
+
+.gallery-pagination .next:hover,
+.gallery-pagination .prev:hover {
+  background-color: #252525;
 }
 
 @media (max-width:1199px) {
